@@ -1,24 +1,22 @@
 :root{
+  --primary-color: #898989;
+  --secondary-color: #D9D9D9;
   --background-color: #0F0F0F;
   --text-color: #D9D9D9;
-  --font-family: 'Space Grotesk';
+  --font-family: 'Inter, sans-serif';
 }
-
 footer {
   background-color: var(--background-color);
-  opacity: 0.9;
-
+  opacity: 0.85;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-
   padding: 2vh 0;
+  margin: 4vh 0 0 0;
 }
 
 footer p {

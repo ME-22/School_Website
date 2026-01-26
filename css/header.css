@@ -1,12 +1,14 @@
 :root{
+  --primary-color: #898989;
+  --secondary-color: #D9D9D9;
   --background-color: #0F0F0F;
   --text-color: #D9D9D9;
-  --font-family: 'Space Grotesk';
+  --font-family: 'Inter, sans-serif';
 }
 
 header {
   background-color: var(--background-color);
-  opacity: 0.9;
+  opacity: 0.85;
   align-self: top;
   margin: 0;
   align-items: flex;
