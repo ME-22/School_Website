@@ -1,61 +1,72 @@
-:root{
+:root {
   --primary-color: #898989;
   --secondary-color: #D9D9D9;
   --background-color: #0F0F0F;
   --text-color: #D9D9D9;
-  --font-family: 'Inter, sans-serif';
+  --font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
   margin: 0;
   min-height: 100vh;
   background-image: url("../images/Main IMG.png");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.InfoContent{
+.InfoContent {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* left + right edges */
+  justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
   padding: 20px 60px;
+  gap: 40px;
 }
-
 
 .InfoCard {
   display: flex;
   background-color: var(--background-color);
   opacity: 0.85;
-  margin: 50px 0; /* no auto centering */
+  margin: 50px 0;
   width: 40%;
   text-align: center;
   padding: 20px;
   font-size: 20px;
 }
 
+.InfoCard h3 {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+}
 
-.Contact{
+.InfoCard p {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  padding: 20px;
+  font-size: 18px;
+}
+
+.Contact {
   background-color: var(--background-color);
   opacity: 0.85;
   font-family: var(--font-family);
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  justify-content: flex-end;
   padding: 20px;
   gap: 20px;
 }
 
-.Songs{
+.Songs {
   display: flex;
   padding-left: 60px;
 }
 
-#SongCards{
+#SongCards {
   display: grid;
   gap: 20px;
 }
@@ -65,24 +76,67 @@ body{
   flex-direction: column;
   background-color: var(--background-color);
   opacity: 0.85;
-  width: 90vh;
+  width: 150%;
+  max-width: 900px;
   text-align: center;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 20px;
   font-size: 20px;
-  background-color: var(--background-color);
   color: var(--text-color);
 }
 
-.InfoCard h3 {
-  color: var(--text-color);
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
+@media (max-width: 900px) {
+  .InfoContent {
+    padding: 20px 30px;
+  }
+
+  .InfoCard {
+    width: 48%;
+    font-size: 18px;
+    flex-direction: column;
+  }
+
+  .Songs {
+    padding-left: 30px;
+  }
+
+  .SongCard {
+    font-size: 18px;
+  }
 }
 
-.InfoCard p {
-  color: var(--text-color);
-  font-family: var(--font-family);
-  padding: 20px;
-  font-size: 18px;
+@media (max-width: 600px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .InfoContent {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .InfoCard {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .InfoCard p {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .Songs {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  #SongCards {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .SongCard {
+    font-size: 16px;
+    padding: 15px;
+  }
 }
