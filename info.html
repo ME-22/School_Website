@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/info.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
@@ -10,29 +15,31 @@
 </head>
 <header></header>
 <body>
-  <div class="InfoContent">
-    <div class="InfoCard">
-      <img src="./images/Merch 1.png" alt="Merch 1">
-      <p>Discharged is a Next-Gen Hardcore DJ and producer based in Finland. During recent years he has played a major part in the country’s hard-dance scene. His music style blends hardcore, gabber, and terror influences, leaning into the rougher, high-energy end of the spectrum</p>
-    </div>
-    <div class="Contact">
-      <a href="http://"><img src="./images/Twitch.png" alt="Twitch"></a>
-      <a href="http://"><img src="./images/Instagram.png" alt="Twitch"></a>
-      <a href="http://"><img src="./images/TikTok.png" alt="Twitch"></a>
-      <a href="http://"><img src="./images/Spotify.png" alt="Twitch"></a>
-    </div>
-  </div>
-  <!-- <h3> Top 5 songs Played on Spotify</h3> -->
-  <div class="Songs">
-    <template id="song-card-template">
-      <div class="SongCard">
-        <h3 class="title"></h3>
-        <div class="player"></div>
+  <main>
+    <div class="InfoContent">
+      <div class="InfoCard">
+        <img src="./images/Merch 1.png" alt="Merch 1">
+        <p>Discharged is a Next-Gen Hardcore DJ and producer based in Finland. During recent years he has played a major part in the country’s hard-dance scene. His music style blends hardcore, gabber, and terror influences, leaning into the rougher, high-energy end of the spectrum</p>
       </div>
-    </template>
+      <div class="Contact">
+        <a href="http://"><img src="./images/Twitch.png" alt="Twitch"></a>
+        <a href="http://"><img src="./images/Instagram.png" alt="Twitch"></a>
+        <a href="http://"><img src="./images/TikTok.png" alt="Twitch"></a>
+        <a href="http://"><img src="./images/Spotify.png" alt="Twitch"></a>
+      </div>
+    </div>
+    <!-- <h3> Top 5 songs Played on Spotify</h3> -->
+    <div class="Songs">
+      <template id="song-card-template">
+        <div class="SongCard">
+          <h3 class="title"></h3>
+          <div class="player"></div>
+        </div>
+      </template>
 
-    <div id="SongCards"></div>
-  </div>
+      <div id="SongCards"></div>
+    </div>
+  </main>
 </body>
 <footer></footer>
 </html>
