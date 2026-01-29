@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #898989;
+  --secondary-color: #D9D9D9;
+  --background-color: #0F0F0F;
+  --text-color: #D9D9D9;
+  --font-family: 'Inter', sans-serif;
+}
+
+footer {
+  position: fixed;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("../images/Main IMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  flex-direction: column;
+
+  color: var(--text-color);
+
+  font-family: Bebas Neue, sans-serif;
+}
